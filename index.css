@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/cidade-invisivel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: darken ;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+}
+ 
+Header{
+    background-color: #000000AA;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+
+.logo img{
+    user-select: none;
+    width: 120px;
+}
+
+
+
+
+main{
+    padding: 25vh 10vw;
+    flex-grow: 1;
+    color: white;
+}
+
+main h2{
+    font-size: 40px;
+}
+main h1{
+    font-size: 70px;
+}
+main p{
+    font-weight: 200;
+    font-size: 25px;
+    max-width: 800px;
+}
+main a{
+    display: flex;
+    width: 200px;
+    height: 50px ;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 0, 0);
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 2px;
+    transition: all 500ms;
+    user-select: none;
+}
+main a:hover{
+    border: solid 2px rgb(160, 0, 0);
+    background-color: black;
+    user-select: none;
+}
+footer{
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+.Borboleta{
+    position: absolute;
+    width: 60px;
+    top: 99vh;
+    left: 99vw;
+    filter: brightness(1%);
+    animation: voando 40s linear infinite;
+}
+@keyframes voando {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-99vw, -99vh);
+    }
+}
+

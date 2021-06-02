@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 8, 8);
+    background: url("img/iara_cidade_invisivel_capa_widexl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+}
+header{
+        background-color: #000000AA;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10vw;
+        
+    }
+    .logo img{
+        user-select: none;
+        width: 120px;
+    }
+    
+    .links ul{
+        display: flex;
+        gap: 20px;
+        color: white;
+        list-style-type: none;
+    }
+    
+    .links a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        user-select: none;
+        transition: all 500ms;
+    }
+    
+    .links a:hover{
+        color: red;
+    }
+
+main {
+    padding: 20vh 8vw;
+    flex-grow: 1;
+    color: black
+} 
+
+main h1{
+    position: relative;
+    font-size: 70px;
+    color: black;
+}
+
+.segundalinha p {
+font-size: 30px ;
+font-weight: 200;
+max-width: 400px;
+
+
+
+}
+
+.creditos hr{
+    border-color: black;
+    color: black;
+}
+.creditos ul{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(31, 154, 255);
+    
+}
+
+    footer{
+        height: 20px;
+        text-align: center;
+        color: white;
+       
+    }
